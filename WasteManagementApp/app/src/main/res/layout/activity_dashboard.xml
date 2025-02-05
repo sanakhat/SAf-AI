@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- User Info Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="@drawable/stylish_button"
+        android:elevation="4dp"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="johndoe@email.com"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtWalletBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance: $20.00"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <!-- Dashboard Buttons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/btnSellWaste"
+            android:layout_width="0dp"
+            android:layout_height="231dp"
+            android:layout_columnWeight="1"
+            android:background="@drawable/stylish_button"
+            android:drawableTop="@drawable/sell_icon"
+            android:gravity="center"
+            android:text="Sell Waste"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnSellHistory"
+            android:layout_width="0dp"
+            android:layout_height="233dp"
+            android:layout_columnWeight="1"
+            android:background="@drawable/stylish_button"
+            android:drawableTop="@drawable/history_icon"
+            android:gravity="center"
+            android:text="Sell History"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnWallet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/stylish_button"
+            android:drawableTop="@drawable/wallet_icon"
+            android:gravity="center"
+            android:text="Wallet"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/stylish_button"
+            android:drawableTop="@drawable/profile_icon"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="@android:color/white" />
+    </GridLayout>
+
+</LinearLayout>
